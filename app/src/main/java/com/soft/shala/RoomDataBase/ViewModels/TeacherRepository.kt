@@ -10,7 +10,7 @@ class TeacherRepository(private val teacherDao: TeacherDao) {
         teacherDao.saveTeacherInfo(teacher)
     }
 
-    suspend fun getTeacherAccountInfo(): List<TeacherTbl>{
+    suspend fun getTeacherAccountInfo(): TeacherTbl{
         return teacherDao.getTeacherAccountInfo()
     }
 

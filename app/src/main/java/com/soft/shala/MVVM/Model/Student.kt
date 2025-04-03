@@ -8,7 +8,7 @@ data class Student(
     val standard:String,
     val division:String,
     val specialization:String,
-    val accedemic_year:String
+    val accedemic_year:String,
     val emailId:String, val regNo:String,
     val password:String,
     val admitDate:String,
