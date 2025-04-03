@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+            <variable
+                name="vm"
+                type="com.soft.shala.MVVM.ViewModel.AccountVM" />
+    </data>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/header">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:padding="20dp" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/circle_shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:elevation="7dp"
+            android:src="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:background="@drawable/top_left_right_shape"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/white">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/card"
+                    android:src="@drawable/register"
+                    android:backgroundTint="@color/header"
+                    app:tint="@color/white" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/topiclbl"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:hint="Register no.">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/register_no"
+                        android:textSize="14dp"
+                        android:numeric="decimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--
+                           <com.google.android.material.textfield.TextInputLayout
+                               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                               android:id="@+id/passwodlbl"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:textAlignment="center"
+                               android:textSize="14dp"
+                               android:hint="Password"
+                               android:layout_marginLeft="15dp"
+                               android:layout_marginRight="15dp"
+                               android:layout_marginTop="20dp"
+                               android:orientation="vertical">
+                
+                               <com.google.android.material.textfield.TextInputEditText
+                                   android:id="@+id/password"
+                                   android:textSize="14dp"
+                                   android:numeric="decimal"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent" />
+                           </com.google.android.material.textfield.TextInputLayout>
+                -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/card"
+                    android:src="@drawable/password"
+                    android:backgroundTint="@color/header"
+                    app:tint="@color/white" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/passwordlbl"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:hint="Password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:textSize="14dp"
+                        android:password="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--
+                           <com.google.android.material.textfield.TextInputLayout
+                               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                               android:id="@+id/passwodlbl"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:textAlignment="center"
+                               android:textSize="14dp"
+                               android:hint="Password"
+                               android:layout_marginLeft="15dp"
+                               android:layout_marginRight="15dp"
+                               android:layout_marginTop="20dp"
+                               android:orientation="vertical">
+    
+                               <com.google.android.material.textfield.TextInputEditText
+                                   android:id="@+id/password"
+                                   android:textSize="14dp"
+                                   android:numeric="decimal"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent" />
+                           </com.google.android.material.textfield.TextInputLayout>
+                -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register as "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_light" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton android:id="@+id/student"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="a Student" />
+
+                    <RadioButton android:id="@+id/teacher"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="a Teacher" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/login"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:padding="10dp"
+                    android:background="@drawable/card"
+                    android:backgroundTint="@color/gray_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:elevation="25dp" />
+
+
+                <TextView android:id="@+id/reset"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:padding="10dp"
+                    android:background="@drawable/card"
+                    android:backgroundTint="@color/gray_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:elevation="25dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/create_acct"
+                    android:elevation="50dp"
+                    app:tint="@color/gray_light" />
+
+                <TextView android:id="@+id/createAcc"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:text="Create New Account"
+                    android:textColor="@color/gray_light"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/resetpassword"
+                    android:elevation="50dp"
+                    app:tint="@color/gray_light" />
+
+                <TextView android:id="@+id/resetPassword"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp"
+                    android:text="Reset Password"
+                    android:textColor="@color/gray_light"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

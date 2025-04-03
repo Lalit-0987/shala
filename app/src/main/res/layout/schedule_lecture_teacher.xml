@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:background="@drawable/card_adpt"
+    android:backgroundTint="@color/light_bg">
+
+   <RelativeLayout android:layout_weight="0.25"
+       android:layout_width="0dp"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/time1"
+           android:layout_marginTop="2dp"
+           android:textColor="@color/header"
+           android:layout_alignParentTop="true"
+           android:gravity="center"
+           android:text=" 8.20 am "/>
+
+
+       <TextView
+           android:id="@+id/time2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginBottom="2dp"
+           android:gravity="center"
+           android:text="9.30 am"
+           android:textColor="@color/header" />
+
+   </RelativeLayout>
+
+
+    <LinearLayout android:layout_weight="0.05"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/solid_circle_shape"/>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="2dp"
+            android:background="#FF0000FF" />
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/solid_circle_shape"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_weight="0.75"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/subject_adpt"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject"
+            android:textColor="@color/header_text"
+            android:text="Subject"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_details"
+            android:text="SY. Comp Engineering"
+            android:textColor="@color/header_text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/venue"
+            android:text="Room No. 12"
+            android:textColor="@color/header_text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/session"
+            android:text="Create Session"
+            android:textSize="10sp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/card_adpt"
+            android:backgroundTint="@color/gray_light"
+            android:textColor="@color/header_text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

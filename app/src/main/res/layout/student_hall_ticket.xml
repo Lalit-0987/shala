@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/card_adpt"/>
+
+        <LinearLayout android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Full Name"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView android:id="@+id/class_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S.Y BE (IT)"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"/>
+
+            <TextView android:id="@+id/exam_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University Exam"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Roll No."
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="STDIT66"/>
+
+                </LinearLayout>
+
+                <View android:layout_weight="0.003"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_text"/>
+
+                <LinearLayout android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Center No."
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="STDIT66"/>
+
+                </LinearLayout>
+
+                <View android:layout_weight="0.003"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_text"/>
+
+                <LinearLayout android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ticket No."
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="STDIT66"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView android:id="@+id/venueT"
+            android:layout_weight="0.15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Venue:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView android:id="@+id/venue"
+            android:layout_weight="0.85"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Venue:"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/gray_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/display_msgbox_dark">
+
+        <TextView android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+        <View android:layout_weight="0.003"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <TextView android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date - Time "
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+        <View android:layout_weight="0.003"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+
+
+        <TextView android:layout_weight="0.13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+        <View android:layout_weight="0.002"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.15"
+            android:text="Attempt"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView android:layout_weight="0.19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subject 1"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text"/>
+
+        <View android:layout_weight="0.003"
+            android:layout_width="0dp"
+            android:layout_marginLeft="-0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <TextView android:layout_weight="0.47"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="10/12/2025, 12.00pm - 2.00 pm"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text"/>
+
+
+
+        <View android:layout_weight="0.003"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <TextView android:layout_weight="0.13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="H12"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text"/>
+
+        <View android:layout_weight="0.002"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <ImageView android:layout_weight="0.15"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView android:layout_weight="0.19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subject 1"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text"/>
+
+        <View android:layout_weight="0.003"
+            android:layout_width="0dp"
+            android:layout_marginLeft="-0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <TextView android:layout_weight="0.47"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="10/12/2025, 12.00pm - 2.00 pm"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text"/>
+
+
+
+        <View android:layout_weight="0.003"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <TextView android:layout_weight="0.13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="H12"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/gray_text"/>
+
+        <View android:layout_weight="0.002"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_text_light"/>
+
+        <ImageView android:layout_weight="0.15"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/wrog"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

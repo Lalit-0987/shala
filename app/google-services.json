@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "791130563794",
+    "project_id": "shala18-336d3",
+    "storage_bucket": "shala18-336d3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791130563794:android:44bcf82b3a1e7aff64f90b",
+        "android_client_info": {
+          "package_name": "com.soft.shala"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlaFaaYT2u4FJh6rRjbnwNUve8vVRztLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

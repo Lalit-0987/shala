@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/card_adpt"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:src="@drawable/university"
+            android:background="@drawable/card_adpt"
+            app:tint="@color/white" />
+
+        <LinearLayout android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exam Title"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView android:layout_weight="0.03"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/style_arrow"/>
+
+                <TextView android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule:"
+                    />
+
+                <View android:layout_weight="0.005"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+
+                <ImageView android:layout_weight="0.03"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/style_arrow"/>
+
+                <TextView android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enroll Student:20"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+
+                <View android:layout_weight="0.005"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView android:layout_weight="0.03"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/style_arrow"/>
+
+                <TextView android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Days:"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
